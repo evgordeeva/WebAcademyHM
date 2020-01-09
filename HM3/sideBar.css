@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #464646;
+    transition: all 0.5s ease;
+    overflow-y: auto;
+    max-height: 150vh;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: #464646;
+    text-align: right;
+    line-height: 70px;
+    background: #464646;
+
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+    font-size: 16px;
+    color: lightgray;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.sidebar ul a i {
+    margin-right: 22px;
+}
+
+ul {
+    border-top: 1px solid #bbbbbb;
+}
+
+ul li:hover a {
+    line-height: 55px;
+    background-color: #636363;
+}
+
+#burger {
+    display: none;
+}
+
+label span, label #cancel {
+    position: absolute;
+    cursor: pointer;
+}
+
+label span {
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    color: black;
+    background-color: #94c6ff;
+    padding: 26px 35px;
+    transition: 0.5s;
+    width: 100%;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    color: darkgray;
+    padding: 4px;
+    transition: all 0.5s ease;
+}
+
+#burger:checked ~ .sidebar {
+    left: 0;
+}
+
+#burger:checked ~ label span {
+    left: 250px;
+}
+
+#burger:checked ~ label #cancel {
+    left: 195px;
+}
+
+label span i {
+    margin-right: 30px;
+}
+
+.content {
+    background-color: black;
+    color: white;
+    padding: 75px 20px 20px 20px;
+    transition: 0.5s;
+    overflow: auto;
+    max-height: 87vh;
+}
+
+#burger:checked ~ .content {
+    margin-left: 250px;
+}
+

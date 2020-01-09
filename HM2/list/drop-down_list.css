@@ -1,0 +1,45 @@
+header {
+    margin: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    background-color: #0B4F6A;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.menu dl {
+    position: absolute;
+    display: none;
+    border-radius: 7px;
+    border-color: white;
+    background-color: white;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 150px;
+    height: 120px;
+    padding-left: 20px;
+    box-shadow: darkgray 1px 1px 1px 1px;
+
+}
+
+.menu:hover dl {
+    display: block;
+
+}
+
+.menu dt {
+    margin-top: 10px;
+
+
+}

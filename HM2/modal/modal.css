@@ -1,0 +1,86 @@
+body {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: center;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-top: 10%;
+
+}
+
+.close {
+    text-align: right;
+    font-size: 30px;
+    color: black;
+    padding-top: 2%;
+    padding-right: 5%;
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+    font-family: Optima;
+
+}
+
+.head {
+    font-family: Optima;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.name {
+    width: 310px;
+    height: 15px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 2px solid black;
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 9px;
+
+}
+
+.password {
+    width: 310px;
+    height: 15px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 2px solid black;
+    background: white;
+    margin-bottom: 30px;
+    padding: 9px;
+}
+
+p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.3);
+    background: white;
+    margin-bottom: 25px;
+}
+
+.login {
+    width: 235px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.cancel {
+    width: 95px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
