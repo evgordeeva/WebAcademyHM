@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input;
+    const numbers = /^[0-9]+$/;
+    let isValid;
+    do {
+        input = prompt("Введите число > 100", 0);
+
+        isValid = !numbers.test(input);
+        if (isValid) {
+            alert("Допустимо вводить только цифры!");
+        }
+    }
+    while (input <= 100 || isValid);
+
+    let arr = [5, 6, 7];
+    console.log(arr.splice(1, 1))
+
+
+</script>
+
+</body>
+</html>
