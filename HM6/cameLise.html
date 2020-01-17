@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function camelise(str) {
+        var arr = str.split('-');
+        for (var i = 1; i < arr.length; i++) {
+            var charArr = arr[i].split("");
+
+            charArr[0] = arr[i].charAt(0).toUpperCase();
+
+            arr[i] = charArr.join("");
+        }
+        str = arr.join("");
+        return str;
+    }
+
+    console.log(camelise("my-short-string"));
+
+
+</script>
+</body>
+</html>
